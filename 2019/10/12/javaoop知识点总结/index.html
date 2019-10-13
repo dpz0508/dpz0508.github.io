@@ -6,15 +6,19 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2019/10 | Hexo</title>
+  <title>javaoop知识点总结 | Hexo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta property="og:type" content="website">
-<meta property="og:title" content="Hexo">
-<meta property="og:url" content="http://yoursite.com/archives/2019/10/index.html">
+  <meta name="description" content="一、语言基础：参考《Java语言程序设计基础篇第10版》总结  ctrl+f:常见错误 1..概述：（1）Java语言规范，API（应用程序接口）。JavaSE、JavaEE、JavaME。JDK。 .java编译为.class，Java虚拟机（JVM）执行。（每个类都被编译成一个独立的.class文件）（2）注释：//           //   文档注释：/  */ ， javadoc命令提">
+<meta property="og:type" content="article">
+<meta property="og:title" content="javaoop知识点总结">
+<meta property="og:url" content="http://yoursite.com/2019/10/12/javaoop知识点总结/index.html">
 <meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="一、语言基础：参考《Java语言程序设计基础篇第10版》总结  ctrl+f:常见错误 1..概述：（1）Java语言规范，API（应用程序接口）。JavaSE、JavaEE、JavaME。JDK。 .java编译为.class，Java虚拟机（JVM）执行。（每个类都被编译成一个独立的.class文件）（2）注释：//           //   文档注释：/  */ ， javadoc命令提">
 <meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-10-13T15:33:45.817Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo">
+<meta name="twitter:title" content="javaoop知识点总结">
+<meta name="twitter:description" content="一、语言基础：参考《Java语言程序设计基础篇第10版》总结  ctrl+f:常见错误 1..概述：（1）Java语言规范，API（应用程序接口）。JavaSE、JavaEE、JavaME。JDK。 .java编译为.class，Java虚拟机（JVM）执行。（每个类都被编译成一个独立的.class文件）（2）注释：//           //   文档注释：/  */ ， javadoc命令提">
   
     <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
   
@@ -150,103 +154,294 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
+            <article id="post-javaoop知识点总结" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
   
+    <h1 class="article-title" itemprop="name">
+      javaoop知识点总结
+    </h1>
   
-    
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2019" class="archive-year">2019</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/10/12/javaoop知识点总结/" class="archive-article-date">
+
+        
+        <a href="/2019/10/12/javaoop知识点总结/" class="archive-article-date">
   	<time datetime="2019-10-12T07:55:12.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-12</time>
 </a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/10/12/javaoop知识点总结/">javaoop知识点总结</a>
-    </h1>
-  
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>一、语言基础：<br>参考《Java语言程序设计基础篇第10版》总结</p>
+<p> ctrl+f:常见错误</p>
+<p>1..概述：<br>（1）Java语言规范，API（应用程序接口）。JavaSE、JavaEE、JavaME。JDK。</p>
+<pre><code>.java编译为.class，Java虚拟机（JVM）执行。（每个类都被编译成一个独立的.class文件）</code></pre><p>（2）注释：//           /<strong>/   文档注释：/</strong>  */ ， javadoc命令提取成HTML文件，放在类或者方法头前面。</p>
+<p>（3）二元操作符两边各加一个空格。</p>
+<p>（4）文件名必须与公共类名完全相同。   </p>
+<p>（5）程序设计错误：语法错误，运行时错误，逻辑错误。</p>
+<p>（6）Java 程序可以内嵌在HTML 网页内，通过Web 浏览器下载. 给Web 客户带来生动的动画和灵活的交互性。   </p>
+<p>2..基本程序设计：<br>（1）加号“+”：字符串连接符。字符串常量不能跨行，可用“+”。</p>
+<p>（2）输入输出：</p>
+<p> ① System.out：标准输出设备，默认显示器。</p>
+<pre><code>System.in：标准输入设备，默认键盘。</code></pre><p>②不直接支持控制台输入：</p>
+<p>Import java.util.Scanner;<br>Scanner input=new Scanner(System.in);<br>input.nextDouble();//（可以空格或者回车键分开 连续几个nextDouble()方法时）<br>（3）import:</p>
+<p>import java.util.Scanner;</p>
+<p> import java.util.*;</p>
+<p>除非要在程序中使用某个类，否则关于被导人包中的这些类的信息在编译时或运行时是不被读入的。导人语句只是告诉编译器在什么地方能找到这些类。声明明确导人和声明通配符导人在性能上是没有什么差别的。</p>
+<p>（4）标识符：</p>
+<p>①字母、数字、下划线、美元符号（$），不能以数字开头。（习惯上，$只用在机器自动产生的源代码中。）</p>
+<p>②命名习惯：</p>
+<p>变量和方法: 第一个单词的字母小写，而后面的每个单词的首字母大写。例如，变量radius 和area 以及方法print。</p>
+<p>类名：每个单词的首字母大写。例如，类名ComputeArea 和System。</p>
+<p>常量：所有字母大写，两个单词间用下划线连接。常童PI 和常量MAX_VALUE0。</p>
+<p>（5）变量：</p>
+<p>变量声明告知编译器根据数据类型为变量分配合适的内存空间。</p>
+<p>（6）赋值语句、赋值表达式：</p>
+<p>Java中赋值语句可以作为一个表达式。</p>
+<p>表达式表示涉及值、变量和操作符的一个运算，它们组合在一起计算出一个新值。</p>
+<p>赋值语句本质上：计算出一个值并将它赋给操作符左边变量的一个表达式。</p>
+<p>（7）命名常量：</p>
+<p>命名常量（named const），简称常量。Final。</p>
+<p>final double PI=3.14159;</p>
+<p>（8）数值数据类型和操作：</p>
+<p>①byte short  int  long float  double（双精度）</p>
+<pre><code>IEEE 754标准，计算机上表示浮点数。</code></pre><p>②%：只有当被除数是负数时，余数才是负的。例如：-7%3 结果是-1, -12%4 结果是0, -26%-8 结果是-2, 20%-13结果是7。</p>
+<p>求余、余数运用例子：</p>
+<p>如果今天是星期六，10天之后是星期几呢？是星期二</p>
+<p>Math.pow(a,b)   a^b</p>
+<p>（9）数值型直接量：</p>
+<p>一个直接量（literal) 是一个程序中直接出现的常量值。</p>
+<p>①整形：默认为int，十进制</p>
+<p>long:追加L或l</p>
+<p>二进制：0b或0B开头</p>
+<p>八进制：0开头</p>
+<p>十六进制：0x或0X开头。</p>
+<p>②浮点型：默认为double</p>
+<p>float:追加f或F</p>
+<p>double:追加d或D</p>
+<p>③科学计数法：</p>
+<p>浮点型直接量也可以用ax 10^b 形式的科学记数法表示。例如，1.23456 X 10^2 可以写成1.23456E2 或者l.23456E+2，而1.23456 x10^-2 等于1.23456E-2。E (或e) 表示指数，既可以是大写的也可以是小写的。</p>
+<p>注：为了提高可读性，Java 允许在数值直接量的两个数字间使用下划线。</p>
+<p>long ssn =232_45_4519;<br>longcreditCardNumber=2324 _4545_4519_3415L;<br>然而，45_和_45 是不正确的。下划线必须置于两个数字间。<br>（10）自增、自减操作符：</p>
+<p>i++ 后置自增操作符</p>
+<p>++i 前置自增操作符</p>
+<p>（11）数值类型转换：</p>
+<p>拓宽类型（自动）、缩窄类型（显示完成）。（强制类型转换）</p>
+<p>注：Java 中，x1 op= x2 形式的增强赋值表达式，执行为xl = (T)(x1 op x2), 这里T是x1 的类型。因此，下面代码是正确的。</p>
+<p>int sum =0;</p>
+<p>sum +=4.5;// sum becomes 4 after this statement</p>
+<p>sum += 等价于sum = (int)(sum+ 4.5).</p>
+<p>（12）技巧、常见错误：</p>
+<p>①tax *100 是1185.3</p>
+<p>(int)(tax * 100)是1185</p>
+<p>(int)(tax * 100) / 100.0 是11.85</p>
+<p>②System.currentTimeMillis（）：返回从GMT 1970 年1 月1 日00:00:00 开始到当前时刻的毫秒数。（时间戳是时间开始计时的点，因为1970 年是UNIX 操作系统正式发布的时间，所以这一时间也称为UNIX 时间戳（UNIX epoch)。）</p>
+<p>③整数溢出：</p>
+<pre><code>Java不会给出关于溢出的瞥告或者错误，，因此，当处理一个与给定类型的最大和最小范围很接近的数值时，要特别小心。
 
-        <div class="article-info info-on-right">
-          
-          
+ 如果存储的浮点数很小（例如，接近于0 )，这会引起向下溢出。Java 会将它近似为0,所以一般情况下不用考虑向下溢出的问题。</code></pre><p>④取整错误：</p>
+<pre><code>        计算得到的数字的近似值和确切的算术值之间的不同。因为一个变量保存的位数是有限的，因此取整错误是无法避免的。涉及浮点数的计算都是近似的，因为这些数没有以准确的精度来存储。
 
+整数可以精确地存储，整数计算得到的是精确的整数运算结果。</code></pre><p>⑤超出预期的整数除法：</p>
+<p>   Java 使用同样的除法操作符来执行整数和浮点数的除法。当两个操作数是整数时，/ 操作符执行一个整数除法，操作的结果是整数，小数部分被截去。</p>
+<pre><code>要强制两个整数执行一个浮点数除法时，将其中一个整数转换为浮点数值</code></pre><p>（13）软件开发过程：</p>
+<p>3..选择：<br>（1）Boolean类型:true false（直接量）</p>
+<p>（2）if    if-else    if-else if-else      switch     tiaojian？expression1：expression2；</p>
+<p>在同一个块中，else 总是和离它最近的if 子句匹配</p>
+<p>Switch:……</p>
+<p>（3）常见错误：</p>
+<p>①对布尔值的冗余测试 if (even == true)  if(even)</p>
+<p> 错误：if (even = true)</p>
+<p>②尝试：简化布尔变量賦值</p>
+<p>③两个浮点数值的相等测试：</p>
+<p>可以测试两个数的差距小于某个阈值，来比较它们是否已经足够接近。</p>
+<p>（4）产生随机数：</p>
+<p>①System.currentTimeMills()%10…… 产生一个整数，其他方法更好。</p>
+<p>②Math.Random()  0.0~1.0之间double值，包括0.0，不包括1.0</p>
+<p>(int)( Math.random()*10)  0~9之间整数</p>
+<p>（5）System.exit(status)</p>
+<p>调用这个方法可以终止程序。参数status 为0 表明程序正常结束。一个非0 的状态代码表示非正常结束。</p>
+<p>（6）逻辑操作符：</p>
+<p>!               &amp;&amp;          ||            ^（异或）</p>
+<p>产生布尔表达式</p>
+<p>&amp;&amp;、|| ：短路</p>
+<p>（7）操作符优先级、结合性：</p>
+<p>（8）调试：</p>
+<p>4..数学函数、字符、字符串：<br>数学函数</p>
+<p>Math类：java.lang包<br>常量：PI，E</p>
+<p>方法：三角函数方法、指数函数方法、服务方法。</p>
+<p>三角函数方法：</p>
+<p>atan(a)返回值 -π/2<del>π/2,acos(a)返回值0</del>π。</p>
+<p>指数函数方法：</p>
+<p>服务方法：</p>
+<p>min,max,abs :min(2.5,3)</p>
+<p>random(): 0.0&lt;=Math.random()&lt;1.0 double类型          a+(int)(Math.random()*b)</p>
+<p>字符数据类型和操作</p>
+<p>（1）编码表：Unicode ASCII,Unicode码包括ASCII码，’\u0000’到‘\u007F’ 对应128个ASCII表<br>Java支持Unicode码，一个16位Unicode码占2字节，\u开头4位十六进制数表示，’\u0000’到’\uFFFF’。<br>Java中Unicode和ASCII都可使用。<br>（2）转义字符：<br>诸如\u03bl的转义符用于表示一个Unicode。转义序列中的序列号作为一个整体翻译，而不是分开翻译。一个转义序列被当作一个字符。</p>
+<p>（3）char类型与数值类型 的转换：<br>0~FFFF 可隐式转成字符型，其他范围显式转换。<br>所有数值操作符都可以用在char 型操作数上。如果另一个操作数是一个数字或字符，那么char 型操作数就会被自动转换成一个数字；如果另一个操作数是一个字符串，字符就会与该字符串相连。<br>（4）方法：</p>
+<blockquote>
+<p>&lt; ……</p>
+</blockquote>
+<p>Character.isDigit(c);</p>
+<p>String类型<br>（1）</p>
+<p>这些方法为实例方法。<br>字符串连接：concat() +（若要用加号实现连接功能，至少要有一个操作数必须为字符串）+=<br>trim():删除字符串两端的空白字符返回一个新字符串。字符  ‘ ‘ 、\t、\f、\r、或者\n 被称为空白字符。例如，”\t Good Night \n”.trim()返回一个新字符串Good Night。<br>（2）控制台读取字符串、字符：<br>字符串：Scanner对象的next()方法。<br>next()方法读取以空白字符结束的字符串（即  ‘ ‘ 、’\t’、’\f’、’\r’、或者’\n’ )。<br>nextLine() 方法读取一整行文本,读取以按下回车键为结束标志的字符串。<br>字符：调用nextLine()方法读取一个字符串，然后在字符串上调用charAt(0)来返回一个字符。<br>（3）字符串比较：</p>
+<p>==：检测s1,s2是否指向同一对象，而不是它们内容是否相同。<br>（4）获得子字符串：</p>
+<p>（5）获取子字符串中的字符或者子串：</p>
+<p>（6）字符串和数字之间的转换：<br>Integer、Double 包含于java.lang中，是自动导入的。<br>字符串（数值型）-&gt;数值：int a=Integer.parseInt(intString);Double.parseDouble(doubleString)<br>数值-&gt;字符串：+   string s=number+””;<br>格式化控制台输出：<br>System.out.printf()    P124</p>
+<p>默认情况下，浮点值显示小数点后6 位数字</p>
+<p>默认情况下，输出是右对齐的。可以在格式标识符中放一个负号（-）, 表明该条目在特定区域中的输出是左对齐的。<br>注：使用符号％ 来标记格式标识符，要在格式字符串里输出直接量%, 需要使用％%。<br>5..循环<br>while  do-while  for<br>在循环控制中，不要使用浮点值来比较值是否相等。因为浮点值都是某些值的近似值，使用它们可能导致不精确的循环次数和不准确的结果。<br>while(true){……}</p>
+<p>break continue<br>break 立即终止包含break 的最内层循环;continue 只是终止当前迭代。<br>continue 语句总是在一个循环内。在while 和do-while 循环中，continue 语句之后会马上计算循环继续条件；而在for 循环中，continue 语句之后会立即先执行每次迭代后的动作，再计算循环继续条件。<br>Java语言中goto是保留关键字，没有goto语句，也没有任何使用goto关键字的地方。<br>输入输出重定向：<br>P141</p>
+<p>最小数值化错误：<br>在循环继续条件中使用浮点数将导致数值错误。</p>
+<p>float -&gt; double<br>使用整数计数器<br>（如果结果值要求的精度比变量可以存储的更高，那么添加一个非常小的数到一个非常大的数上可能没有什么影响。例如，100000000.0+0.000000001的不精确的结果是100000000.0。）为了得到更精确的结果，仔细选择计算的顺序。在较大数之前先增加较小数是减小误差的一种方法。</p>
+<p>6..方法<br>（1）我们经常会说“定义方法” 和“ 声明变量”，这里我们谈谈两者的细微差别。定义是指被定义的条目是什么，而声明通常是指为被声明的条目分配内存来存储數据。<br>（2）方法名和参数列表一起构成方法签名。</p>
+<p>（3）main方法是由Java虚拟机调用的。<br>（4）void方法不需要return语句，但它能用于终止方法并返回到方法调用者。语法为：return;<br>（5）重载方法：可以使用同样的名字来定义不同方法，只要它们的签名是不同的。<br>在一个类中有两个方法，它们具有相同的名字，但有不同的参数列表。Java 编译器根据方法签名决定使用哪个方法。<br>被重载的方法必须具有不同的参数列表，不能基于不同修饰符或者返回值类型来重载方法。<br>（6）变量作用域：<br>在方法中定义的变量：局部变量。局部变量的作用域从声明变量的地方开始，直到包含该变量的块结束为止。局部变量都必须在使用之前进行声明和赋值。<br>在for 循环头中初始动作部分声明的变量，其作用域是整个for 循环。但是在for 循环体内声明的变量，其作用域只限于循环体内，是从它的声明处开始，到包含该变量的块结束为止。<br>（7）方法抽象与逐步求精：<br>自顶向下，自底向上。<br>7..一维数组<br>（1）声明、创建、初始化数组：<br>double[] a;      （double a[]也可以）<br>不同于基本数据类型变量的声明，声明一个数组变量时并不在内存中给数组分配任何空间。它只是创建一个对数组的引用的存储位置。如果变量不包含对数组的引用，那么这个变量的值为null。<br>double[] a=new double[10];<br>为了简化，通常说a是一个数组，而不用更长的陈述：a是一个含有10 个double 型元素数组的引用变量。<br>double[] a={ 1.2  ,3 , 4 , 5.2 };<br>（2）默认值：<br>a.length<br>创建数组后，它的元素被赋予默认值。数值型基本数据类型：0，char:’\u0000’,boolean:false。<br>（3）处理数组：<br>对于char[] 类型的数组，可以使用一条打印语句打印。例如：<br>char[] city={ ‘D’,’a’,’l’,’l’,’a’,’s’ };<br>System.out.println(city);<br>（4）foreach循环：<br>for(double e:myList){<br>System.out.println(e);<br>}<br>对myList 中每个元素e 进行以下操作<br>（5）复制数组：<br>循环语句逐个复制；System.arraycopy;clone方法（13章讲）。</p>
+<p>arraycopy 方法没有给目标数组分配内存空间。复制前必须创建目标数组以及分配给它的内存空间。复制完成后，sourceArray 和targetArray 具有相同的内容，但占有独立的内存空间。</p>
+<p>list2 =listl；该语句并不能将listl引用的数组内容复制给list2, 而只是将listl的引用值复制给了list2。在这条语句之后，listl 和list2 都指向同一个数组，list2 原先所引用的数组不能再引用，它就变成了垃圾，会被Java 虚拟机自动收回（这个过程称为垃圾回收）。</p>
+<p>（6）将数组传递给方法、从方法中返回数组：<br>public static void printArray(int[] array){……}</p>
+<p>printArray(new int[]{3,1,2,6,4,2});<br>new int[]{ 1,2,3,4 }  匿名数组</p>
+<p>给方法传递引用<br>数组在Java 中是对象，JVM 将对象存储在一个称作堆（heap）的内存区域中，堆用于动态内存分配。</p>
+<p>从方法中返回一个数组时，数组的引用被返回。<br>public static int[] reverse(int[] list){<br>    ……<br>    return mylist;<br>}</p>
+<p>（7）可变长参数列表：<br>具有同样类型的可变长度的参数可以传递给方法，并将作为数组对待。<br>只能给方法中指定一个可变长参数，同时该参数必须是最后一个参数。任何常规参数必须在它之前。</p>
+<p>（8）二分查找（P227代码）、线性查找 ，选择排序<br>（9）Arrays类<br>java.util.Arrays  静态方法<br>①排序：</p>
+<p>②查找：<br>binarySearch方法：数组要提前按升序排列好。返回值：不存在返回-（插入点下标+1），正常返回索引。<br>binarySearch(list,’a’);<br>③检测相等：<br>equals方法：equals(list1,list2);<br>④填充整个或部分数组：<br>fill方法：下列代码将5 填充到 list1 中，将8 填充到元素 list2[1] 到 list2[5-1] 中<br>int[] list1={2,3,7,10};<br>int[] list2={2,4,7,7,7,10};<br>fill(list1,5);<br>fill(list2,1,5,8)//fill 8 to a partial array<br>⑤返回字符串：<br>toString方法：<br>int[] list={2,4,7,10};<br>System.out.println(Arrays.toString(list));<br>（10）命令行参数：<br>main方法可以从命令行接受字符串参数。<br>public static void main(String[] args){……}  args:字符串数组</p>
+<p>java TestMain  arg0  arg1  arg2<br>java TestMain  arg1  “arg have space”  arg3</p>
+<p>如果运行程序时没有传递字符串，那么使用new String[0]创建数组。此时，该数组是长度为0的空数组。args不为null,但args.length=0;</p>
+<p>当符号* 用于命令行时表示当前目录下的所有文件。在使用命令 java Test * 之后，下面的程序就会显示当前目录下的所有文件。</p>
+<p>8..多维数组<br>（1）二维数组：<br>①<br>int[][] matrix=new int[5][5];<br>int[][] a={ {1,2,3},{4,5,6},{7,8,9},{10,11,12} };<br>a.length a[0].length</p>
+<p>②锯齿数组<br>int[][] triangleArray={ {1,2,3,4,5},{2,3,4,5},{3,4,5},{4,5},{6} };</p>
+<p>int[][] triangleArray=new int[5][];<br>triangleArray[0]=new int[5];<br>triangleArray[1]=new int[4];<br>注：使用语法new int[5][] 创建数组时，必须指定第一个下标。语法new int[][] 是错误的。</p>
+<p>（2）多维数组：<br>double[][][] scores=new double [6][5][2];</p>
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
+        </div>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2019/10/12/javaoop知识点总结/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/10/10/测试一下/" class="archive-article-date">
-  	<time datetime="2019-10-10T10:21:07.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-10</time>
-</a>
+<nav id="article-nav">
+  
+  
+    <a href="/2019/10/10/测试一下/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">测试一下</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
+        
+        
+    </div>
+</aside>
+
+
+
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/10/10/测试一下/">测试一下</a>
-    </h1>
+  
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2019/10/10/first/" class="archive-article-date">
-  	<time datetime="2019-10-10T10:10:59.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2019-10-10</time>
-</a>
-        </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2019/10/10/first/">first</a>
-    </h1>
   
 
-        <div class="article-info info-on-right">
-          
-          
-
-        </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
-  
-  
-    </div></section>
   
 
-    
+  
 
 
           </div>
@@ -269,8 +464,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
