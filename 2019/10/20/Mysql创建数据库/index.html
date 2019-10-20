@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html>
+<head><meta name="generator" content="Hexo 3.9.0">
+  <meta charset="utf-8">
+  
+  <title>Hexo</title>
+
+  <!-- keywords -->
+  
+
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="title: Mysql创建数据库date: 2019-10-20 14:19:54tags:—MySQL创建数据库 使用 mysqladmin 创建数据库 使用普通用户，你可能需要特定的权限来创建或者删除 MySQL 数据库。 所以我们这边使用root用户登录，root用户拥有最高权限，可以使用 mysql mysqladmin 命令来创建数据库。 实例 以下命令简单的演示了创建数据库的过程，">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Hexo">
+<meta property="og:url" content="http://yoursite.com/2019/10/20/Mysql创建数据库/index.html">
+<meta property="og:site_name" content="Hexo">
+<meta property="og:description" content="title: Mysql创建数据库date: 2019-10-20 14:19:54tags:—MySQL创建数据库 使用 mysqladmin 创建数据库 使用普通用户，你可能需要特定的权限来创建或者删除 MySQL 数据库。 所以我们这边使用root用户登录，root用户拥有最高权限，可以使用 mysql mysqladmin 命令来创建数据库。 实例 以下命令简单的演示了创建数据库的过程，">
+<meta property="og:locale" content="en">
+<meta property="og:updated_time" content="2019-10-20T06:20:43.881Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Hexo">
+<meta name="twitter:description" content="title: Mysql创建数据库date: 2019-10-20 14:19:54tags:—MySQL创建数据库 使用 mysqladmin 创建数据库 使用普通用户，你可能需要特定的权限来创建或者删除 MySQL 数据库。 所以我们这边使用root用户登录，root用户拥有最高权限，可以使用 mysql mysqladmin 命令来创建数据库。 实例 以下命令简单的演示了创建数据库的过程，">
+  
+    <link rel="alternative" href="/atom.xml" title="Hexo" type="application/atom+xml">
+  
+  
+    <link rel="icon" href="http://7xkj1z.com1.z0.glb.clouddn.com/head.jpg">
+  
+  <link rel="stylesheet" href="/css/style.css">
+  
+  
+
+  <script src="//cdn.bootcss.com/require.js/2.3.2/require.min.js"></script>
+  <script src="//cdn.bootcss.com/jquery/3.1.1/jquery.min.js"></script>
+
+  
+</head></html>
+<body>
+  <div id="container">
+    <div id="particles-js"></div>
+    <div class="left-col">
+    <div class="overlay"></div>
+<div class="intrude-less">
+	<header id="header" class="inner">
+		<a href="/" class="profilepic">
+			
+			<img lazy-src="http://7xkj1z.com1.z0.glb.clouddn.com/head.jpg" class="js-avatar">
+			
+		</a>
+
+		<hgroup>
+		  <h1 class="header-author"><a href="/">������</a></h1>
+		</hgroup>
+
+		
+
+		
+			<div class="switch-btn">
+				<div class="icon">
+					<div class="icon-ctn">
+						<div class="icon-wrap icon-house" data-idx="0">
+							<div class="birdhouse"></div>
+							<div class="birdhouse_holes"></div>
+						</div>
+						<div class="icon-wrap icon-ribbon hide" data-idx="1">
+							<div class="ribbon"></div>
+						</div>
+						
+						<div class="icon-wrap icon-link hide" data-idx="2">
+							<div class="loopback_l"></div>
+							<div class="loopback_r"></div>
+						</div>
+						
+						
+					</div>
+					
+				</div>
+				<div class="tips-box hide">
+					<div class="tips-arrow"></div>
+					<ul class="tips-inner">
+						<li>菜单</li>
+						<li>标签</li>
+						
+						<li>友情链接</li>
+						
+						
+					</ul>
+				</div>
+			</div>
+		
+
+		<div class="switch-area">
+			<div class="switch-wrap">
+				<section class="switch-part switch-part1">
+					<nav class="header-menu">
+						<ul>
+						
+							<li><a href="/">主页</a></li>
+				        
+							<li><a href="/archives">所有文章</a></li>
+				        
+						</ul>
+					</nav>
+					<nav class="header-nav">
+						<div class="social">
+							
+						</div>
+					</nav>
+				</section>
+				
+				
+				<section class="switch-part switch-part2">
+					<div class="widget tagcloud" id="js-tagcloud">
+						
+					</div>
+				</section>
+				
+				
+				
+				<section class="switch-part switch-part3">
+					<div id="js-friends">
+					
+			          <a target="_blank" class="main-nav-link switch-friends-link" href="https://github.com/smackgg/hexo-theme-smackdown">smackdown</a>
+			        
+			        </div>
+				</section>
+				
+
+				
+			</div>
+		</div>
+	</header>				
+</div>
+    </div>
+    <div class="mid-col">
+      <nav id="mobile-nav">
+  	<div class="overlay">
+  		<div class="slider-trigger"></div>
+  		<h1 class="header-author js-mobile-header hide">������</h1>
+  	</div>
+	<div class="intrude-less">
+		<header id="header" class="inner">
+			<div class="profilepic">
+				<img lazy-src="http://7xkj1z.com1.z0.glb.clouddn.com/head.jpg" class="js-avatar">
+			</div>
+			<hgroup>
+			  <h1 class="header-author">������</h1>
+			</hgroup>
+			
+			<nav class="header-menu">
+				<ul>
+				
+					<li><a href="/">主页</a></li>
+		        
+					<li><a href="/archives">所有文章</a></li>
+		        
+		        <div class="clearfix"></div>
+				</ul>
+			</nav>
+			<nav class="header-nav">
+				<div class="social">
+					
+				</div>
+			</nav>
+		</header>				
+	</div>
+</nav>
+      <div class="body-wrap"><article id="post-Mysql创建数据库" class="article article-type-post" itemscope itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2019/10/20/Mysql创建数据库/" class="article-date">
+  	<time datetime="2019-10-20T06:19:54.787Z" itemprop="datePublished">2019-10-20</time>
+</a>
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy" />
+    
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <hr>
+<p>title: Mysql创建数据库<br>date: 2019-10-20 14:19:54<br>tags:<br>—MySQL创建数据库</p>
+<p>使用 mysqladmin 创建数据库</p>
+<p>使用普通用户，你可能需要特定的权限来创建或者删除 MySQL 数据库。</p>
+<p>所以我们这边使用root用户登录，root用户拥有最高权限，可以使用 mysql mysqladmin 命令来创建数据库。</p>
+<p>实例</p>
+<p>以下命令简单的演示了创建数据库的过程，数据名为 W3CSCHOOL:</p>
+<p>[root@host]# mysqladmin -u root -p create W3CSCHOOL Enter password:<strong>**</strong></p>
+<p>以上命令执行成功后会创建 MySQL 数据库 W3CSCHOOL。</p>
+<p>使用 PHP脚本 创建数据库</p>
+<p>PHP使用 mysql_query 函数来创建或者删除 MySQL 数据库。</p>
+<p>该函数有两个参数，在执行成功时返回 TRUE，否则返回 FALSE。</p>
+<p>语法</p>
+<p>bool mysql_query( sql, connection );参数描述sql必需。规定要发送的 SQL 查询。注释：查询字符串不应以分号结束。connection可选。规定 SQL 连接标识符。如果未规定，则使用上一个打开的连接。</p>
+<p>实例</p>
+<p>以下实例演示了使用PHP来创建一个数据库：</p>
+<html> 
+<head><meta name="generator" content="Hexo 3.9.0"> 
+<meta charset="utf-8"> 
+<title>创建 MySQL 数据库</title>
+ </head> 
+<body> 
+<?php
+ $dbhost = 'localhost:3036'; 
+$dbuser = 'root'; 
+$dbpass = 'rootpassword'; 
+$conn = mysql_connect($dbhost, $dbuser, $dbpass); 
+if(! $conn ) { 
+die('连接错误: ' . mysql_error()); 
+} 
+echo '连接成功<br />'; 
+$sql = 'CREATE DATABASE W3CSCHOOL';
+ $retval = mysql_query( $sql, $conn ); 
+if(! $retval ) 
+{ 
+die('创建数据库失败: ' . mysql_error()); 
+} 
+echo "数据库 W3CSCHOOL 创建成功n";
+ mysql_close($conn);
+ ?> 
+</body> 
+</html>
+
+
+      
+    </div>
+    
+  </div>
+  
+    
+<nav id="article-nav">
+  
+  
+    <a href="/2019/10/12/javaoop知识点总结/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">javaoop知识点总结</div>
+      <strong class="article-nav-caption">&gt;</strong>
+    </a>
+  
+</nav>
+
+  
+</article>
+
+
+<div class="ds-share share" data-thread-key="Mysql创建数据库" data-title="" data-url="http://yoursite.com/2019/10/20/Mysql创建数据库/"  data-images="http://7xkj1z.com1.z0.glb.clouddn.com/head.jpg" data-content="">
+    <div class="ds-share-inline">
+      <ul  class="ds-share-icons-16">
+      	<li data-toggle="ds-share-icons-more"><a class="ds-more" href="javascript:void(0);">分享到：</a></li>
+        <li><a class="ds-weibo" href="javascript:void(0);" data-service="weibo">微博</a></li>
+        <li><a class="ds-qzone" href="javascript:void(0);" data-service="qzone">QQ空间</a></li>
+        <li><a class="ds-qqt" href="javascript:void(0);" data-service="qqt">腾讯微博</a></li>
+        <li><a class="ds-wechat" href="javascript:void(0);" data-service="wechat">微信</a></li>
+      </ul>
+      <div class="ds-share-icons-more">
+      </div>
+    </div>
+ </div>
+ 
+
+
+
+
+
+</div>
+      <footer id="footer">
+  <div class="outer">
+    <div id="footer-info">
+      <div class="footer-left">
+        &copy; 2019 ������
+      </div>
+        <div class="footer-right">
+          <a href="http://hexo.io/" target="_blank">Hexo</a>  Theme <a href="https://github.com/smackgg/hexo-theme-smackdown" target="_blank">Smackdown</a>
+        </div>
+    </div>
+  </div>
+</footer>
+    </div>
+    
+  <link rel="stylesheet" href="/fancybox/jquery.fancybox.css">
+
+
+<script>
+	var yiliaConfig = {
+		fancybox: true,
+		mathjax: true,
+		animate: true,
+		isHome: false,
+		isPost: true,
+		isArchive: false,
+		isTag: false,
+		isCategory: false,
+		open_in_new: false
+	}
+</script>
+<script src="/js/main.js"></script>
+
+
+
+<script type="text/x-mathjax-config">
+MathJax.Hub.Config({
+    tex2jax: {
+        inlineMath: [ ['$','$'], ["\\(","\\)"]  ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+    }
+});
+
+MathJax.Hub.Queue(function() {
+    var all = MathJax.Hub.getAllJax(), i;
+    for(i=0; i < all.length; i += 1) {
+        all[i].SourceElement().parentNode.className += ' has-jax';                 
+    }       
+});
+</script>
+
+<script src="//cdn.bootcss.com/mathjax/2.7.0/MathJax.js"></script>
+
+
+  </div>
+</body>
+</html>
